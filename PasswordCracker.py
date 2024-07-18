@@ -13,9 +13,10 @@ if b"400 Bad Request" in error:
 else:
     print(f"Nice Job, the password was {password}")
 
-# Number of lines in rockyou.txt file
+# Number of lines in the WordList file (in this case, rockyou.txt).
 lines = 14344393 
 
+# You can always edit 'rockyou.txt' with onother WordList.
 with open('rockyou.txt') as topo_file:    
     for iteration, line in enumerate(topo_file):
         password, progress = line[:-1], "{0:.5f}%".format(iteration/lines*100)
