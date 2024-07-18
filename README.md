@@ -3,7 +3,6 @@
 <div align="center">
   <strong>Try finding the password of a WIFI Camera using any WordList</strong>
   <br/><br>
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/GabrielProjects/WIFI-Camera-Attack">
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/GabrielProjects/WIFI-Camera-Attack">
 
 
